@@ -6,7 +6,13 @@
 
 .site-header {
     width: 100%;
-    background-color: #333;
+    background-color: #072657;
+}
+
+#Principal {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .main-nav {
@@ -43,10 +49,62 @@
     font-size: 14px;
     padding: 10px 0;
     transition: color 0.2s ease;
+    user-select: none;
 }
 
 .main-nav a:hover {
     color: white;
+}
+
+.Caixa1 {
+    background-color: #555;
+    width: 65%;
+    height: 290px;
+}
+
+.destaque-conteudo {
+    display: flex;
+    gap: 20px;
+}
+
+.destaque-conteudo img {
+    position: relative;
+    width: 260px;
+    height: 220px;
+    object-fit: cover;
+    left: 10px;
+    user-select: none;
+}
+
+.destaque-texto {
+    color: white;
+}
+
+.Caixa1 h1
+{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background-color: rgb(39, 37, 37);
+    user-select: none;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.destaque-texto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    user-select: none;
+    font-family: monospace;
+}
+
+.destaque-texto button {
+    font-family: monospace;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    left: 610px;
+    top: 140px;
+    user-select: none;
 }
 
 footer {
@@ -59,4 +117,5 @@ footer h1 {
     color: black;
     font-size: 1.5rem;
     margin: 0;
+    user-select: none;
 }
