@@ -11,8 +11,8 @@
 
 #Principal {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 800px;
+    object-fit: fill;
 }
 
 .main-nav {
@@ -23,11 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     list-style: none;
     margin: 0;
     padding: 0;
-
     min-height: 45px;
 }
 
@@ -46,7 +44,7 @@
     color: #ddd;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 30px;
     padding: 10px 0;
     transition: color 0.2s ease;
     user-select: none;
@@ -59,7 +57,7 @@
 .Caixa1 {
     background-color: #555;
     width: 65%;
-    height: 290px;
+    height: 305px;
 }
 
 .destaque-conteudo {
@@ -70,7 +68,7 @@
 .destaque-conteudo img {
     position: relative;
     width: 260px;
-    height: 220px;
+    height: 240px;
     object-fit: cover;
     left: 10px;
     user-select: none;
@@ -80,31 +78,46 @@
     color: white;
 }
 
-.Caixa1 h1
-{
+.Caixa1 h1 {
     color: white;
     font-size: 2.5rem;
     margin-bottom: 10px;
     background-color: rgb(39, 37, 37);
     user-select: none;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 15px;
 }
 
 .destaque-texto h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     user-select: none;
     font-family: monospace;
 }
 
-.destaque-texto button {
+.destaque-texto p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.destaque-texto a {
     font-family: monospace;
     position: relative;
     font-size: 1rem;
     line-height: 1.5;
-    left: 610px;
-    top: 140px;
+    left: 1090px;
+    top: 120px;
+    color: black;
+    background-color: white;
+    padding: 3px 8px;
+    text-decoration: none;
     user-select: none;
+}
+
+.destaque-texto a:hover {
+    background-color: #ddd;
 }
 
 footer {
@@ -118,4 +131,69 @@ footer h1 {
     font-size: 1.5rem;
     margin: 0;
     user-select: none;
+}
+
+.conteudos {
+    display: flex;
+    gap: 20px;
+    width: 65%;
+    margin-top: 20px;
+}
+
+.Caixa2 {
+    width: 50%;
+    height: 332px;
+    background-color: #555;
+}
+
+.Caixa2 h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    padding-left: 8px;  
+    user-select: none;
+    font-family: monospace;
+    position: relative;
+    left: 275px;
+    bottom: 16rem;
+}
+
+.Caixa2 p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    position: relative;
+    left: 17rem;
+    bottom: 17rem;
+}
+
+.Caixa2 h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background-color: rgb(39, 37, 37);
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 15px;
+}
+
+.Caixa2 img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    left: 10px;
+    user-select: none;
+}
+
+.conteudos h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background-color: rgb(39, 37, 37);
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
 }
