@@ -30,13 +30,13 @@ function mostrarCaixa($conteudo)
 {
     echo '<div class="Caixa2">';
 
-    echo '<h1>Destaque da semana</h1>';
-
     echo '<img src="' . $conteudo["imagem"] . '" alt="' . $conteudo["titulo"] . '">';
 
     echo '<h2>' . $conteudo["titulo"] . '</h2>';
-    
+
     echo '<p>' . $conteudo["descricao"] . '</p>';
+
+    echo '<a href="' . $conteudo["link"] . '">LEIA MAIS</a>';
 
     echo '</div>';
 }

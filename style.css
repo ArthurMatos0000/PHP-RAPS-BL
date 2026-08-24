@@ -183,10 +183,28 @@ footer h1 {
 .Caixa2 img {
     position: relative;
     width: 260px;
-    height: 260px;
+    height: 280px;
     object-fit: cover;
     left: 10px;
+    top: 30px;
     user-select: none;
+}
+
+.Caixa2 a {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1rem;
+    position: relative;
+    left: 615px;
+    bottom: 90px;
+}
+
+.Caixa2 a:hover {
+    background-color: #ddd;
 }
 
 .conteudos h1{
@@ -196,4 +214,60 @@ footer h1 {
     background-color: rgb(39, 37, 37);
     user-select: none;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.artigo {
+    width: 65%;
+    background-color: #555;
+    padding: 30px;
+}
+
+.artigo-conteudo {
+    color: white;
+}
+
+.artigo-conteudo span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.artigo-conteudo h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.artigo-conteudo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.artigo-conteudo img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.artigo-conteudo p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.voltar:hover {
+    text-decoration: underline;
 }

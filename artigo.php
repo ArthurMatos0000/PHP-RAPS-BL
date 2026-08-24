@@ -2,6 +2,20 @@
 
 include 'dados.php';
 
+$noticias = [
+    "destaque" => $destaque,
+    "milagre" => $programacao,
+    "genio" => $webdesign
+];
+
+$noticiaSelecionada = $_GET["noticia"] ?? "destaque";
+
+if (isset($noticias[$noticiaSelecionada])) {
+    $artigo = $noticias[$noticiaSelecionada];
+} else {
+    $artigo = $destaque;
+}
+
 ?>
 
 <?php include 'header.php'; ?>
@@ -10,32 +24,28 @@ include 'dados.php';
 
     <article class="artigo">
 
-        <span>TECNOLOGIA E PROGRAMAÇÃO</span>
+        <div class="artigo-conteudo">
 
-        <h1><?php echo $destaque["titulo"]; ?></h1>
+            <span>TECNOLOGIA E PROGRAMAÇÃO</span>
 
-        <h2>
-            <?php echo $destaque["descricao"]; ?>
-        </h2>
+            <h1><?php echo $artigo["titulo"]; ?></h1>
 
-        <img 
-            src="<?php echo $destaque["imagem"]; ?>" 
-            alt="<?php echo $destaque["titulo"]; ?>"
-        >
+            <h2>
+                <?php echo $artigo["descricao"]; ?>
+            </h2>
 
-        <p>
-            A música "Gols e Travessuras" é uma obra que combina elementos de
-            crítica social, narrativa poética e musicalidade envolvente. A letra
-            aborda temas como a vida urbana, desafios pessoais e a busca por
-            significado em meio às adversidades.
-        </p>
+            <img 
+                src="<?php echo $artigo["imagem"]; ?>" 
+                alt="<?php echo $artigo["titulo"]; ?>"
+            >
 
-        <p>
-            A melodia da música é cativante, com uma combinação de ritmos que
-            refletem a diversidade cultural e musical da sociedade contemporânea.
-            A instrumentação é cuidadosamente elaborada, criando uma atmosfera
-            que complementa a mensagem da letra.
-        </p>
+            <p>
+                <?php echo $artigo["texto"]; ?>
+            </p>
+
+            <a class="voltar" href="index.php">← Voltar</a>
+
+        </div>
 
     </article>
 
