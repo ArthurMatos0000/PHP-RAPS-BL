@@ -16,7 +16,7 @@ function mostrarDestaque($destaque)
 
     echo '<p>' . $destaque["descricao"] . '</p>';
 
-    echo '<a href="' . $destaque["link"] . '">LEIA MAIS</a>';
+    echo '<button type="button" onclick="window.location.href=\'' . $destaque["link"] . '\'">LEIA MAIS</button>';
 
     echo '</div>';
 
@@ -30,13 +30,17 @@ function mostrarCaixa($conteudo)
 {
     echo '<div class="Caixa2">';
 
-    echo '<img src="' . $conteudo["imagem"] . '" alt="' . $conteudo["titulo"] . '">';
-
+    // TÍTULO
     echo '<h2>' . $conteudo["titulo"] . '</h2>';
 
+    // IMAGEM
+    echo '<img src="' . $conteudo["imagem"] . '" alt="' . $conteudo["titulo"] . '">';
+
+    // DESCRIÇÃO
     echo '<p>' . $conteudo["descricao"] . '</p>';
 
-    echo '<a href="' . $conteudo["link"] . '">LEIA MAIS</a>';
+    // BOTÃO
+    echo '<button type="button" onclick="window.location.href=\'' . $conteudo["link"] . '\'">LEIA MAIS</button>';
 
     echo '</div>';
 }

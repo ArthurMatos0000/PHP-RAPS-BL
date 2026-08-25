@@ -5,23 +5,29 @@ include 'funcao.php';
 
 ?>
 
-<main>
+<div class="layout">
 
-    <?php
-
-    mostrarDestaque($destaque);
-
-    ?>
-
-    <section class="conteudos">
+    <main>
 
         <?php
 
-        mostrarCaixa($programacao);
-        mostrarCaixa($webdesign);
+        mostrarDestaque($destaque);
 
         ?>
 
-    </section>
+        <section class="conteudos">
 
-</main>
+            <?php
+
+            mostrarCaixa($programacao);
+            mostrarCaixa($webdesign);
+
+            ?>
+
+        </section>
+
+    </main>
+
+    <?php include 'aside.php'; ?>
+
+</div>
