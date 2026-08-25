@@ -302,6 +302,7 @@ main {
     width: calc(35% - 10px);
     background-color: #555;
     padding: 15px;
+    height: 46.2rem;
 }
 
 .busca {
