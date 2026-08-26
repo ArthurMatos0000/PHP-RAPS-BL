@@ -20,35 +20,45 @@ if (isset($noticias[$noticiaSelecionada])) {
 
 <?php include 'header.php'; ?>
 
+<div class="layout">
+
 <main>
 
-    <article class="artigo">
+<article class="artigo">
 
-        <div class="artigo-conteudo">
+<div class="artigo-conteudo">
 
-            <span>TECNOLOGIA E PROGRAMAÇÃO</span>
+<span>TECNOLOGIA E PROGRAMAÇÃO</span>
 
-            <h1><?php echo $artigo["titulo"]; ?></h1>
+<h1>
+<?php echo $artigo["titulo"]; ?>
+</h1>
 
-            <h2>
-                <?php echo $artigo["descricao"]; ?>
-            </h2>
+<h2>
+<?php echo $artigo["descricao"]; ?>
+</h2>
 
-            <img 
-                src="<?php echo $artigo["imagem"]; ?>" 
-                alt="<?php echo $artigo["titulo"]; ?>"
-            >
+<img 
+src="<?php echo $artigo["imagem"]; ?>" 
+alt="<?php echo $artigo["titulo"]; ?>"
+>
 
-            <p>
-                <?php echo $artigo["texto"]; ?>
-            </p>
+<p>
+<?php echo $artigo["texto"]; ?>
+</p>
 
-            <a class="voltar" href="index.php">← Voltar</a>
+<a class="voltar" href="index.php">
+← Voltar
+</a>
 
-        </div>
+</div>
 
-    </article>
+</article>
 
 </main>
+
+<?php include 'aside.php'; ?>
+
+</div>
 
 <?php include 'footer.php'; ?>

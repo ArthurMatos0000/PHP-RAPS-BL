@@ -119,8 +119,8 @@ body {
     color: black;
     display: inline-block;
     position: relative;
-    left: 560px;
-    top: 90px;
+    left: 33rem;
+    top: 7rem;
 }
 
 .destaque-texto button:hover {
@@ -219,7 +219,7 @@ footer h1 {
 }
 
 .artigo {
-    width: 65%;
+    width: 100%;
     background-color: #555;
     padding: 30px;
 }
@@ -287,11 +287,15 @@ footer h1 {
 
 .layout {
     display: flex;
-    flex: 1 0 auto;
-    gap: 20px;
     width: 100%;
+    gap: 20px;
     padding: 15px;
-    align-items: flex-start;
+    align-items: stretch;
+}
+
+.layout main {
+    flex: 2;
+    min-width: 0;
 }
 
 main {
@@ -299,10 +303,10 @@ main {
 }
 
 .sidebar {
-    width: calc(35% - 10px);
+    flex: 1;
+    min-width: 0;
     background-color: #555;
     padding: 15px;
-    height: 46.2rem;
 }
 
 .busca {
@@ -354,6 +358,9 @@ main {
     background-color: white;
     height: 120px;
     overflow: hidden;
+    margin-top: 40px;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .anuncios img {
@@ -361,16 +368,6 @@ main {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-main {
-    background-color: red;
-}
-
-.layout {
-    background-color: yellow;
-}
-
-footer {
-    background-color: blue;
+    user-select: none;
+    -webkit-user-drag: none;
 }
